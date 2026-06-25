@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AM8</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: #0A0908;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 0 48px 72px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('/bg.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.42);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .tagline {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(16px, 2.4vw, 22px);
+      font-weight: 300;
+      color: #C9A96E;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+
+    .wordmark {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(48px, 9vw, 88px);
+      font-weight: 300;
+      color: #F5F0E8;
+      letter-spacing: 12px;
+      line-height: 1;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 0 32px 56px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="tagline">We think before we compute.</div>
+      <div class="wordmark">AM8</div>
+    </div>
+  </div>
+</body>
+</html>
